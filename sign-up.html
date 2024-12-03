@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in System</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container text-center my-5">
+      <div class="group w-75 m-auto p-5">
+        <h1>Smart Login System</h1>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control my-4"
+            id="InputName"
+            aria-describedby="emailHelp"
+            placeholder="Enter your Name"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control mb-3"
+            id="InputEmail"
+            aria-describedby="emailHelp"
+            placeholder="Enter your Email"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="password"
+            class="form-control mb-3"
+            id="InputPassword"
+            aria-describedby="emailHelp"
+            placeholder="Enter your Password"
+          />
+        </div>
+        <div id="emailexists" class="form-text text-danger fs-6 d-none">
+          Email already exists
+        </div>
+        <div id="emailsucess" class="form-text text-success fs-6 d-none">
+          sucess
+        </div>
+        <div id="alertMsg" class="form-text text-danger fs-6 d-none">
+          All inputs are required
+        </div>
+        <button id="signup" type="submit" class="btn w-100 my-3">
+          Sign Up
+        </button>
+        <div id="emailHelp" class="form-text text-white fs-6">
+          You have an account?<a href="./index.html"> Sign In</a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/0888b9421f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
